@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./output.css" />
+  <title>TailWind Pratice</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-top">
+      <h1><i class="fa-solid fa-bars"></i>AddCo</h1>
+
+      <div class="user">
+        <h4>Nepox</h4>
+        <div class="img-user"><i class="fa-solid fa-user"></i></div>
+      </div>
+    </div>
+    <div class="nav-button">Track every you bought this month</div>
+  </nav>
+
+  <main>
+    <div class="my-purchases">
+      <h2 class="month-sclect">August 2026</h2>
+      <div class="total-spent-contener">
+        <div class="left-side-spent">
+          <h2>Total Spent</h2>
+          <h2 class="colorTextB">₹12,450</h2>
+        </div>
+        <div class="right-side-spent">
+          <h2 id="add-product-text">+Add Product</h2>
+        </div>
+      </div>
+
+      <div class="add-product">
+        <form>
+          <label for="product">Product Name</label>
+          <input type="text" placeholder="Enter Product Name" name="username" id="username">
+
+
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option value="">Select Category</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="food">Food</option>
+            <option value="grocery">Grocery</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="price">Price</label>
+          <input type="number" placeholder="₹ Enter Price" name="productPrice" id="productPrice">
+
+
+          <button id="buttonSubmit" type="submit">Add Product</button>
+        </form>
+  </main>
+
+
+
+
+  <div class="your-purchases-his">
+    <h2><i class="fa-solid fa-cart-shopping"></i>My Purchases History</h2>
+
+    <div class="his-card">
+      <div class="card-left">
+        <h1>Headphones</h1>
+        <h2>Electronics</h2>
+        <h2 class="colorText">₹2,499</h2>
+      </div>
+
+      <div class="card-right">
+        <h2>Aug 12</h2>
+      </div>
+    </div>
+
+    <div class="his-card">
+      <div class="card-left">
+        <h1>Headphones</h1>
+        <h2>Electronics</h2>
+        <h2 class="colorText">₹2,499</h2>
+      </div>
+
+      <div class="card-right">
+        <h2>Aug 12</h2>
+      </div>
+    </div>
+
+    <div class="his-card">
+      <div class="card-left">
+        <h1>Headphones</h1>
+        <h2>Electronics</h2>
+        <h2 class="colorText">₹2,499</h2>
+      </div>
+
+      <div class="card-right">
+        <h2>Aug 12</h2>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <footer>© 2026 siburam7 | All Right Reserved</footer>
+
+
+  <script src="../pratice/noting.js"></script>
+</body>
+
+</html>
