@@ -288,11 +288,43 @@ nav {
   height: 28px;
   background-color: rgba(25, 7, 162, 0.304);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: rgba(25, 7, 162, 0.634);
   font-size: 15px;
+  position: absolute;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.15);
 }
+
+.manu-allText {
+  display: none;
+}
+
+.toggle-manu-allText {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.manu-allText h1 {
+  padding: 15px;
+  position: relative;
+}
+
+.manu-allText h1 i {
+  margin-right: 10px;
+}
+
+#log-out {
+  margin-top: calc(100vh - 370px);
+  color: rgba(255, 0, 0, 0.786);
+}
+
 .add-product {
   border-top: 0.0001px solid black;
   width: 80%;
@@ -347,7 +379,7 @@ main {
 }
 .my-purchases {
   background-color: rgba(100, 148, 237, 0.186);
-  margin-top: 10px;
+  margin-top: 38px;
   width: 100%;
   border-radius: 10px;
   display: flex;
