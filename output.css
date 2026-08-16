@@ -353,6 +353,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  transition: 1s;
 }
 .month-sclect {
   margin-top: 10px;
@@ -373,6 +375,16 @@ main {
 .right-side-spent span {
   padding-inline: 15px;
 }
+
+.right-side-spent h2 {
+  /* background-color: red; */
+  padding: 5px;
+}
+
+.right-side-spent h2 {
+  cursor: pointer;
+}
+
 .right-side-spent {
   width: 50%;
   display: flex;
