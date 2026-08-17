@@ -388,8 +388,9 @@ main {
 
   transition: 1s;
 }
-.month-sclect {
+#month-all {
   margin-top: 10px;
+  border: none;
 }
 .total-spent-contener {
   width: 100%;
@@ -477,4 +478,15 @@ footer {
   justify-content: center;
   position: fixed;
   bottom: 0;
+}
+
+/* All border outer none */
+
+select,
+input {
+  outline: none;
+}
+
+#year-all {
+  border: none;
 }
