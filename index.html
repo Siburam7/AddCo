@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./output.css" />
+  <link rel="stylesheet" href="addExpense.css">
+  <link rel="stylesheet" href="myPurchases.css">
+  <link rel="stylesheet" href="budget.css">
   <title>TailWind Pratice</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -37,115 +40,123 @@
     </div>
   </nav>
 
-  <main>
-    <div class="my-purchases">
-      <div class="top-purchases-line">
-        <select name="year" id="year-all">
-          <option value="2026">2026</option>
-          <option value="2020">2025</option>
-          <option value="2021">2024</option>
-          <option value="2022">2023</option>
-          <option value="2023">2022</option>
-          <option value="2024">2021</option>
-          <option value="2025">2020</option>
-        </select>
 
-        <!--  -->
-
-        <select name="month" id="month-all">
-          <option value="January">Aug</option>
-          <option value="January">Jan</option>
-          <option value="February">Feb</option>
-          <option value="March">Mar</option>
-          <option value="April">Apr</option>
-          <option value="May">May</option>
-          <option value="June">Jun</option>
-          <option value="July">Jul</option>
-          <option value="August">Aug</option>
-          <option value="September">Sept</option>
-          <option value="October">Oct</option>
-          <option value="November">Nov</option>
-          <option value="December">Dec</option>
-        </select>
-
-      </div>
-      <div class="total-spent-contener">
-        <div class="left-side-spent">
-          <h2>Total Spent</h2>
-          <h2 class="colorTextB">₹12,450</h2>
-        </div>
-        <div class="right-side-spent">
-          <h2 id="add-product-text">+Add Product</h2>
-        </div>
-      </div>
-
-      <div class="add-product">
-        <form>
-          <label for="product">Product Name</label>
-          <input type="text" placeholder="Enter Product Name" name="username" id="username">
-
-
-          <label for="category">Category</label>
-          <select id="category" name="category">
-            <option value="">Select Category</option>
-            <option value="electronics">Electronics</option>
-            <option value="clothing">Clothing</option>
-            <option value="food">Food</option>
-            <option value="grocery">Grocery</option>
-            <option value="other">Other</option>
+  <div class="dashBord footerMinGroup">
+    <main>
+      <div class="my-purchases">
+        <div class="top-purchases-line">
+          <select name="year" id="year-all">
+            <option value="2026">2026</option>
+            <option value="2020">2025</option>
+            <option value="2021">2024</option>
+            <option value="2022">2023</option>
+            <option value="2023">2022</option>
+            <option value="2024">2021</option>
+            <option value="2025">2020</option>
           </select>
 
-          <label for="price">Price</label>
-          <input type="number" placeholder="₹ Enter Price" name="productPrice" id="productPrice">
+          <!--  -->
+
+          <select name="month" id="month-all">
+            <option value="January">Aug</option>
+            <option value="January">Jan</option>
+            <option value="February">Feb</option>
+            <option value="March">Mar</option>
+            <option value="April">Apr</option>
+            <option value="May">May</option>
+            <option value="June">Jun</option>
+            <option value="July">Jul</option>
+            <option value="August">Aug</option>
+            <option value="September">Sept</option>
+            <option value="October">Oct</option>
+            <option value="November">Nov</option>
+            <option value="December">Dec</option>
+          </select>
+
+        </div>
+        <div class="total-spent-contener">
+          <div class="left-side-spent">
+            <h2>Total Spent</h2>
+            <h2 class="colorTextB">₹12,450</h2>
+          </div>
+          <div class="right-side-spent">
+            <h2 id="add-product-text">+Add Product</h2>
+          </div>
+        </div>
+
+        <div class="add-product">
+          <form>
+            <label for="product">Product Name</label>
+            <input type="text" placeholder="Enter Product Name" name="username" id="username">
 
 
-          <button id="buttonSubmit" type="submit">Add Product</button>
-        </form>
-  </main>
+            <label for="category">Category</label>
+            <select id="category" name="category">
+              <option value="">Select Category</option>
+              <option value="electronics">Electronics</option>
+              <option value="clothing">Clothing</option>
+              <option value="food">Food</option>
+              <option value="grocery">Grocery</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="price">Price</label>
+            <input type="number" placeholder="₹ Enter Price" name="productPrice" id="productPrice">
+
+
+            <button id="buttonSubmit" type="submit">Add Product</button>
+          </form>
+    </main>
 
 
 
 
-  <div class="your-purchases-his">
-    <h2><i class="fa-solid fa-cart-shopping"></i>My Purchases History</h2>
+    <div class="your-purchases-his">
+      <h2><i class="fa-solid fa-cart-shopping"></i>My Purchases History</h2>
 
-    <div class="his-card">
-      <div class="card-left">
-        <h1>Headphones</h1>
-        <h2>Electronics</h2>
-        <h2 class="colorText">₹2,499</h2>
+      <div class="his-card">
+        <div class="card-left">
+          <h1>Headphones</h1>
+          <h2>Electronics</h2>
+          <h2 class="colorText">₹2,499</h2>
+        </div>
+
+        <div class="card-right">
+          <h2>Aug 12</h2>
+        </div>
       </div>
 
-      <div class="card-right">
-        <h2>Aug 12</h2>
-      </div>
-    </div>
+      <div class="his-card">
+        <div class="card-left">
+          <h1>Headphones</h1>
+          <h2>Electronics</h2>
+          <h2 class="colorText">₹2,499</h2>
+        </div>
 
-    <div class="his-card">
-      <div class="card-left">
-        <h1>Headphones</h1>
-        <h2>Electronics</h2>
-        <h2 class="colorText">₹2,499</h2>
-      </div>
-
-      <div class="card-right">
-        <h2>Aug 12</h2>
-      </div>
-    </div>
-
-    <div class="his-card">
-      <div class="card-left">
-        <h1>Headphones</h1>
-        <h2>Electronics</h2>
-        <h2 class="colorText">₹2,499</h2>
+        <div class="card-right">
+          <h2>Aug 12</h2>
+        </div>
       </div>
 
-      <div class="card-right">
-        <h2>Aug 12</h2>
+      <div class="his-card">
+        <div class="card-left">
+          <h1>Headphones</h1>
+          <h2>Electronics</h2>
+          <h2 class="colorText">₹2,499</h2>
+        </div>
+
+        <div class="card-right">
+          <h2>Aug 12</h2>
+        </div>
       </div>
     </div>
   </div>
-  </main>
+
+  <div class="addExpense footerMinGroup"></div>
+
+  <div class="myPurchases footerMinGroup"></div>
+
+  <div class="budget footerMinGroup"></div>
 
   <footer>
     <div class="footer-min active-footer">

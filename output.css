@@ -317,6 +317,7 @@ nav {
   font-size: 14px;
   position: absolute;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.15);
+  z-index: 2;
 }
 
 .manu-allText {
@@ -391,6 +392,14 @@ body {
 .colorTextB {
   color: green;
   font-weight: 600;
+}
+
+.dashBord {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 main {
   width: 95%;

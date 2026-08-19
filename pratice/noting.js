@@ -62,7 +62,7 @@ let navMenuToggle = function () {
       navBtnText.style.display = "inline";
     } else {
       toggle = 1;
-      buttomNav.style.height = "calc(100vh - 65px)";
+      buttomNav.style.height = "calc(100vh - 45px)";
       buttomNav.style.backgroundColor = "white";
       buttomNav.style.width = "75%";
       navBtnText.style.display = "none";
@@ -73,3 +73,24 @@ let navMenuToggle = function () {
 };
 
 navMenuToggle();
+
+// Footer all Option
+
+let footerMin = document.querySelectorAll(".footer-min");
+let footerMinGroup = document.querySelectorAll(".footerMinGroup");
+
+footerMin.forEach((fMin, idx) => {
+  fMin.addEventListener("click", () => {
+    footerMin[0].classList.remove("active-footer");
+    footerMin[1].classList.remove("active-footer");
+    footerMin[2].classList.remove("active-footer");
+    footerMin[3].classList.remove("active-footer");
+    fMin.classList.add("active-footer");
+
+    footerMinGroup[0].style.display = "none";
+    footerMinGroup[1].style.display = "none";
+    footerMinGroup[2].style.display = "none";
+    footerMinGroup[3].style.display = "none";
+    footerMinGroup[idx].style.display = "flex";
+  });
+});
