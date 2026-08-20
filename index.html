@@ -1,184 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./output.css" />
-  <link rel="stylesheet" href="addExpense.css">
-  <link rel="stylesheet" href="myPurchases.css">
-  <link rel="stylesheet" href="budget.css">
-  <title>TailWind Pratice</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginHome</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
-<body>
-  <nav>
-    <div class="nav-top">
-      <div class="div-left">
-        <i class="fa-solid fa-bars"></i>
-        <div class="logo-main"></div>
-        <h1>AddCo</h1>
-      </div>
+<div class="body">
+    <div class="addCo-logo"></div>
+    <h1 id="addCo-text">AddCo</h1>
+    <h1 id="welcome-back">Welcome Back!</h1>
+    <p class="bio-P-graph">Login to continue to your account</p>
 
-      <div class="user">
-        <h4>Login</h4>
-        <div class="img-user"><i class="fa-solid fa-user"></i></div>
-      </div>
+    <label id="label-grp">
+        <input type="text" placeholder="Username" id="userName">
+        <input type="text" placeholder="Password" id="passWord">
+    </label>
+
+    <div class="remember-forget-contner">
+        <label>
+            <input type="checkbox">
+            Remember me
+        </label>
+
+        <a href="#">Forgot Password?</a>
     </div>
-    <div class="nav-button">
-      <h2 class="text-top-nav-buttom">Track every you bought this month</h2>
+
+    <div class="btn-login">Login</div>
+    <h4 id="signUp-line">Don't have an account?<span><a href="#">Sign up</a></span></h4>
 
 
-      <div class="manu-allText">
-        <h1><i class="fa-solid fa-chart-pie"></i> Monthly Budget</h1>
-        <h1><i class="fa-solid fa-wallet"></i> Set Budget</h1>
-        <h1><i class="fa-solid fa-book-open"></i> User Guide</h1>
-        <h1><i class="fa-solid fa-user"></i> Profile</h1>
-        <h1 id="log-out"><i class="fa-solid fa-right-from-bracket"></i> Logout</h1>
-      </div>
-    </div>
-  </nav>
-
-
-  <div class="dashBord footerMinGroup">
-    <main>
-      <div class="my-purchases">
-        <div class="top-purchases-line">
-          <select name="year" id="year-all">
-            <option value="2026">2026</option>
-            <option value="2020">2025</option>
-            <option value="2021">2024</option>
-            <option value="2022">2023</option>
-            <option value="2023">2022</option>
-            <option value="2024">2021</option>
-            <option value="2025">2020</option>
-          </select>
-
-          <!--  -->
-
-          <select name="month" id="month-all">
-            <option value="January">Aug</option>
-            <option value="January">Jan</option>
-            <option value="February">Feb</option>
-            <option value="March">Mar</option>
-            <option value="April">Apr</option>
-            <option value="May">May</option>
-            <option value="June">Jun</option>
-            <option value="July">Jul</option>
-            <option value="August">Aug</option>
-            <option value="September">Sept</option>
-            <option value="October">Oct</option>
-            <option value="November">Nov</option>
-            <option value="December">Dec</option>
-          </select>
-
-        </div>
-        <div class="total-spent-contener">
-          <div class="left-side-spent">
-            <h2>Total Spent</h2>
-            <h2 class="colorTextB">₹12,450</h2>
-          </div>
-          <div class="right-side-spent">
-            <h2 id="add-product-text">+Add Product</h2>
-          </div>
-        </div>
-
-        <div class="add-product">
-          <form>
-            <label for="product">Product Name</label>
-            <input type="text" placeholder="Enter Product Name" name="username" id="username">
-
-
-            <label for="category">Category</label>
-            <select id="category" name="category">
-              <option value="">Select Category</option>
-              <option value="electronics">Electronics</option>
-              <option value="clothing">Clothing</option>
-              <option value="food">Food</option>
-              <option value="grocery">Grocery</option>
-              <option value="other">Other</option>
-            </select>
-
-            <label for="price">Price</label>
-            <input type="number" placeholder="₹ Enter Price" name="productPrice" id="productPrice">
-
-
-            <button id="buttonSubmit" type="submit">Add Product</button>
-          </form>
-    </main>
-
-
-
-
-    <div class="your-purchases-his">
-      <h2><i class="fa-solid fa-cart-shopping"></i>My Purchases History</h2>
-
-      <div class="his-card">
-        <div class="card-left">
-          <h1>Headphones</h1>
-          <h2>Electronics</h2>
-          <h2 class="colorText">₹2,499</h2>
-        </div>
-
-        <div class="card-right">
-          <h2>Aug 12</h2>
-        </div>
-      </div>
-
-      <div class="his-card">
-        <div class="card-left">
-          <h1>Headphones</h1>
-          <h2>Electronics</h2>
-          <h2 class="colorText">₹2,499</h2>
-        </div>
-
-        <div class="card-right">
-          <h2>Aug 12</h2>
-        </div>
-      </div>
-
-      <div class="his-card">
-        <div class="card-left">
-          <h1>Headphones</h1>
-          <h2>Electronics</h2>
-          <h2 class="colorText">₹2,499</h2>
-        </div>
-
-        <div class="card-right">
-          <h2>Aug 12</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="addExpense footerMinGroup"></div>
-
-  <div class="myPurchases footerMinGroup"></div>
-
-  <div class="budget footerMinGroup"></div>
-
-  <footer>
-    <div class="footer-min active-footer">
-      <i class="fa-solid fa-house"></i>
-      <h3>Dashboard</h3>
-    </div>
-    <div class="footer-min">
-      <i class="fa-solid fa-circle-plus"></i>
-      <h3>Add Expense</h3>
-    </div>
-    <div class="footer-min">
-      <i class="fa-solid fa-cart-shopping"></i>
-      <h3>My Purchases</h3>
-    </div>
-    <div class="footer-min">
-      <i class="fa-solid fa-chart-pie"></i>
-      <h3>Budget</h3>
-    </div>
-  </footer>
-
-
-  <script src="./pratice/noting.js"></script>
-</body>
+    <script src="login.js"></script>
+</div>
 
 </html>

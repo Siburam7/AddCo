@@ -46,29 +46,34 @@ addProductToggle();
 let navMenuToggle = function () {
   let buttomNav = document.querySelector(".nav-button");
   let manuBtn = document.querySelector(".fa-bars");
+  let manuBtnX = document.querySelector(".fa-x");
   let navBtnText = document.querySelector(".text-top-nav-buttom");
 
   let OrgTetxAll = document.querySelector(".manu-allText");
   let toggleTextAll = document.querySelector(".toggle-manu-allText");
 
-  let toggle = 0;
+  manuBtnX.style.display = "none";
 
   manuBtn.addEventListener("click", () => {
-    if (toggle === 1) {
-      toggle = 0;
-      buttomNav.style.height = "28px";
-      buttomNav.style.backgroundColor = "rgba(25, 7, 162, 0.304)";
-      buttomNav.style.width = "100%";
-      navBtnText.style.display = "inline";
-    } else {
-      toggle = 1;
-      buttomNav.style.height = "calc(100vh - 45px)";
-      buttomNav.style.backgroundColor = "white";
-      buttomNav.style.width = "75%";
-      navBtnText.style.display = "none";
-    }
+    manuBtnX.style.display = "flex";
+    buttomNav.style.height = "calc(100vh - 45px)";
+    buttomNav.style.backgroundColor = "white";
+    buttomNav.style.width = "75%";
+    navBtnText.style.display = "none";
 
     OrgTetxAll.classList.toggle("toggle-manu-allText");
+    manuBtn.style.display = "none";
+  });
+
+  manuBtnX.addEventListener("click", () => {
+    manuBtn.style.display = "flex";
+    buttomNav.style.height = "28px";
+    buttomNav.style.backgroundColor = "rgba(25, 7, 162, 0.304)";
+    buttomNav.style.width = "100%";
+    navBtnText.style.display = "inline";
+
+    OrgTetxAll.classList.toggle("toggle-manu-allText");
+    manuBtnX.style.display = "none";
   });
 };
 

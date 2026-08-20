@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+body {
+  width: 95%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.addCo-logo {
+  height: 110px;
+  aspect-ratio: 1/1;
+  background-image: url("img-png/ChatGPT\ Image\ Aug\ 18\,\ 2026\,\ 11_28_48\ PM.png");
+  background-size: 130%;
+  background-position: center;
+  background-position-y: 0px;
+}
+
+#addCo-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #20b95e;
+}
+
+#welcome-back {
+  margin-top: 40px;
+  font-size: 29px;
+}
+
+.bio-P-graph {
+  font-size: 15px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.611);
+}
+
+#label-grp {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#label-grp input {
+  height: 35px;
+  width: 70%;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
+}
