@@ -385,7 +385,7 @@ form label {
 }
 body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -557,7 +557,7 @@ Login-csss-start here */
 
 .body {
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
 
   display: flex;
   flex-direction: column;
