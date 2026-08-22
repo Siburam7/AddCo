@@ -568,8 +568,15 @@ Login-csss-start here */
   justify-content: center;
 }
 
+#SVG-login {
+  height: 300px;
+  aspect-ratio: 1/1;
+}
+
 #welcome-back {
-  margin-top: 20px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
   font-size: 30px;
   font-weight: 630;
 }
@@ -591,15 +598,38 @@ Login-csss-start here */
   gap: 20px;
 }
 
+.password-box {
+  position: relative;
+  width: 100%;
+}
+
+.password-box input:focus {
+  border-color: #4285f4;
+}
+
+.password-box i {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+  font-size: 16px;
+}
+
 #label-grp input {
   height: 50px;
   width: 100%;
   border: 1px solid black;
   padding: 12px;
   border-radius: 10px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-weight: 500;
 }
 
-#label-grp input:valid {
+#label-grp input:focus {
   border: 1px solid #1362fb;
 }
 
@@ -609,8 +639,12 @@ Login-csss-start here */
 
 #label-grp label {
   align-self: self-start;
-  transform: translateY(10px);
+  transform: translateY(13px);
   font-size: 15px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-weight: 600;
 }
 
 .remember-forget-contner {
