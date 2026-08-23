@@ -569,7 +569,6 @@ Login-csss-start here */
 }
 
 .content-boxx-login {
-  background-color: #ffff;
   width: 92%;
   border-radius: 15px;
   border: 0.1px solid #666666ab;
@@ -579,15 +578,27 @@ Login-csss-start here */
   align-items: center;
   justify-content: center;
   padding: 20px;
+
+  background: rgba(255, 255, 255, 0.495);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 15px;
+
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-#SVG-login {
-  height: 300px;
-  aspect-ratio: 1/1;
+.img-logo-top {
+  background-image: url("img-png/Finaal\ AddCo\ logo.png");
+  background-position: center;
+  background-size: cover;
+  width: 75px;
+  aspect-ratio: 1/0.3;
+  align-self: flex-start;
 }
 
 #welcome-back {
-  padding-top: 10px;
+  padding-top: 30px;
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
@@ -604,7 +615,7 @@ Login-csss-start here */
 
 #label-grp {
   width: 95%;
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
