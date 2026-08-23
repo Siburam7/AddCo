@@ -1,10 +1,31 @@
-// open HTML main page
-
+// Open Main HTML page
 let loginBtn = document.querySelector(".btn-login");
 
-loginBtn.addEventListener("click", () => {
-  window.location.href = "main.html";
-});
+if (loginBtn) {
+  loginBtn.addEventListener("click", () => {
+    window.location.href = "main.html";
+  });
+}
+
+// Open Sign Up page
+let signUpBtn = document.querySelector("#sign-up-btn");
+
+if (signUpBtn) {
+  signUpBtn.addEventListener("click", () => {
+    window.location.href = "signUp.html";
+  });
+}
+
+// Open Login page
+let logInBtn = document.querySelectorAll(".log-in-btn");
+
+if (logInBtn) {
+  logInBtn.forEach((LogBtn) => {
+    LogBtn.addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+  });
+}
 
 // Eye In Password
 

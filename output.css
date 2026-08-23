@@ -613,7 +613,7 @@ Login-csss-start here */
   margin-top: -2px;
 }
 
-#label-grp {
+.label-grp {
   width: 95%;
   margin-top: 20px;
   display: flex;
@@ -642,7 +642,7 @@ Login-csss-start here */
   font-size: 16px;
 }
 
-#label-grp input {
+.label-grp input {
   height: 50px;
   width: 100%;
   border: 1px solid #666666ab;
@@ -654,15 +654,15 @@ Login-csss-start here */
   font-weight: 500;
 }
 
-#label-grp input:focus {
+.label-grp input:focus {
   border: 1px solid #1362fb;
 }
 
-#label-grp input:invalid {
+.label-grp input:invalid {
   border: 1px solid red;
 }
 
-#label-grp label {
+.label-grp label {
   align-self: self-start;
   transform: translateY(13px);
   font-size: 15px;
@@ -735,4 +735,31 @@ Login-csss-start here */
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
+}
+
+/* signUpp start here */
+/* signUpp start here */
+
+.label-grp-login {
+  margin-top: 40px;
+}
+
+.btn-sign-up {
+  margin-top: 20px;
+  height: 50px;
+  width: 95%;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #1362fb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffff;
+}
+
+.btn-sign-up:hover {
+  background-color: #0055ffb3;
 }
