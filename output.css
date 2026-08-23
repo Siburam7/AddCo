@@ -568,12 +568,26 @@ Login-csss-start here */
   justify-content: center;
 }
 
+.content-boxx-login {
+  background-color: #ffff;
+  width: 92%;
+  border-radius: 15px;
+  border: 0.1px solid #666666ab;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
 #SVG-login {
   height: 300px;
   aspect-ratio: 1/1;
 }
 
 #welcome-back {
+  padding-top: 10px;
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
@@ -589,7 +603,7 @@ Login-csss-start here */
 }
 
 #label-grp {
-  width: 85%;
+  width: 95%;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -620,7 +634,7 @@ Login-csss-start here */
 #label-grp input {
   height: 50px;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #666666ab;
   padding: 12px;
   border-radius: 10px;
   font-family:
@@ -650,7 +664,7 @@ Login-csss-start here */
 .remember-forget-contner {
   font-size: 15px;
   margin-top: 20px;
-  width: 85%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -669,7 +683,7 @@ Login-csss-start here */
 .btn-login {
   margin-top: 20px;
   height: 50px;
-  width: 85%;
+  width: 95%;
   padding: 12px;
   border-radius: 10px;
   background-color: #1362fb;
@@ -695,9 +709,19 @@ Login-csss-start here */
   margin-top: 20px;
   font-weight: 500;
   font-size: 15px;
+  padding-bottom: 10px;
 }
 
 #signUp-line :last-child {
   margin-left: 5px;
   color: #1362fb;
+}
+
+.login-footer {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #666666ab;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
