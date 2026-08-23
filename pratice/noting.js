@@ -63,6 +63,7 @@ let navMenuToggle = function () {
 
     OrgTetxAll.classList.toggle("toggle-manu-allText");
     manuBtn.style.display = "none";
+    document.body.style.overflow = "hidden";
   });
 
   manuBtnX.addEventListener("click", () => {
@@ -74,6 +75,7 @@ let navMenuToggle = function () {
 
     OrgTetxAll.classList.toggle("toggle-manu-allText");
     manuBtnX.style.display = "none";
+    document.body.style.overflow = "auto";
   });
 };
 
