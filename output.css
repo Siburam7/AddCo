@@ -274,7 +274,7 @@ nav {
 .logo-main {
   width: 90px;
   aspect-ratio: 1/0.25;
-  background-image: url("img-png/Finaal\ AddCo\ logo.png");
+  background-image: url("img-png/AddCo\ Logo\ White.png");
   background-size: cover;
   background-position: center;
 }
@@ -320,7 +320,24 @@ nav {
 }
 
 .manu-allText {
+  margin-top: 20px;
+  width: 100%;
   display: none;
+}
+
+.manu-allText h1 {
+  width: 95%;
+  border-radius: 8px;
+  padding: 15px;
+  position: relative;
+  color: #666;
+}
+
+.toogleNavBottom {
+  background-color: rgba(25, 7, 162, 0.124);
+  font-size: 19px;
+  font-weight: 600;
+  color: rgba(25, 7, 162, 0.634) !important;
 }
 
 .toggle-manu-allText {
@@ -328,18 +345,13 @@ nav {
   width: 100%;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   font-size: 18px;
   font-weight: 500;
 }
 
-.manu-allText h1 {
-  padding: 15px;
-  position: relative;
-}
-
 .manu-allText h1 i {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 #log-out {
@@ -497,6 +509,16 @@ main {
 .colorText {
   color: rgba(182, 27, 0, 0.574);
 }
+
+.addExpense,
+.myPurchases,
+.budget,
+.reports,
+.Categories,
+.setting {
+  display: none;
+}
+
 footer {
   margin-top: 20px;
   width: 100%;
@@ -534,6 +556,8 @@ footer {
 
 .active-footer {
   color: rgba(25, 7, 162, 0.634);
+  border-bottom: 3px solid rgba(25, 7, 162, 0.634);
+  /* margin-bottom: 2px; */
 }
 
 /* All border outer none */
