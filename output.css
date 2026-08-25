@@ -358,166 +358,28 @@ nav {
   color: rgba(255, 0, 0, 0.786);
 }
 
-.add-product {
-  border-top: 0.0001px solid black;
-  width: 80%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-}
-form {
-  margin-top: 20px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-form input,
-form button,
-select {
-  border: 1px solid rgba(25, 7, 162, 0.497);
-  padding: 5px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-form label {
-  margin-bottom: 3px;
-}
-#buttonSubmit {
-  background-color: rgba(25, 7, 162, 0.634);
-  color: #ffff;
-  transition: 0.2s;
-}
-#buttonSubmit:hover {
-  background-color: rgba(25, 7, 162, 0.497);
-  cursor: pointer;
-}
 body {
-  width: 100%;
-  min-height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-.colorTextB {
-  color: green;
-  font-weight: 600;
-}
-
-.dashBord {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-main {
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.my-purchases {
-  background-color: rgba(100, 148, 237, 0.186);
-  margin-top: 38px;
-  width: 100%;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  transition: 1s;
-}
-#month-all {
-  margin-top: 10px;
-  border: none;
-}
-.total-spent-contener {
-  width: 100%;
-  display: flex;
-  padding-block: 20px;
-}
-.left-side-spent {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.left-side-spent h2,
-.right-side-spent span {
-  padding-inline: 15px;
-}
-
-.right-side-spent h2 {
-  /* background-color: red; */
-  padding: 5px;
-}
-
-.right-side-spent h2 {
-  cursor: pointer;
-}
-
-.right-side-spent {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-}
-.your-purchases-his {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 95%;
-  margin-top: 20px;
-  margin-bottom: 100px;
-}
-.fa-cart-shopping {
-  margin-right: 5px;
-}
-.his-card {
-  margin-top: 10px;
-  width: 100%;
-  border-radius: 10px;
-  background-color: rgba(180, 100, 237, 0.095);
-  display: flex;
-  padding: 10px;
-}
-.his-card h1 {
-  font-weight: 600;
-}
-.card-left {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-}
-.card-right {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.card-right h2 {
-  margin-right: 25px;
-}
-.colorText {
-  color: rgba(182, 27, 0, 0.574);
-}
-
-.addExpense,
-.myPurchases,
-.budget,
-.reports,
-.Categories,
-.setting {
+/* .addExpense-page,
+.myPurchases-page,
+.budget-page,
+.reports-page,
+.Categories-page,
+.setting-page {
   display: none;
-}
+} */
+
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
+/* Footer */
 
 footer {
   margin-top: 20px;
@@ -560,18 +422,14 @@ footer {
   /* margin-bottom: 2px; */
 }
 
-/* All border outer none */
-
-select,
-input {
-  outline: none;
-}
-
-#year-all {
-  border: none;
-}
-
-/* 
+/* Login-csss-start here
+Login-csss-start here
+Login-csss-start here
+Login-csss-start here
+Login-csss-start here
+Login-csss-start here
+Login-csss-start here
+Login-csss-start here
 Login-csss-start here
 Login-csss-start here */
 
@@ -759,6 +617,16 @@ Login-csss-start here */
 
 /* signUpp start here */
 /* signUpp start here */
+/* signUpp start here */
+/* signUpp start here */
+/* signUpp start here */
+/* signUpp start here */
+/* signUpp start here */
+/* signUpp start here */
+/* signUpp start here */
+/* signUpp start here */
+/* signUpp start here */
+/* signUpp start here */
 
 .label-grp-login {
   margin-top: 40px;
@@ -782,4 +650,67 @@ Login-csss-start here */
 
 .btn-sign-up:hover {
   background-color: #0055ffb3;
+}
+
+/* addExpense-page */
+/* addExpense-page */
+/* addExpense-page */
+/* addExpense-page */
+/* addExpense-page */
+/* addExpense-page */
+
+.footerMinGroup {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.addExpense-page {
+  width: 85%;
+}
+
+.addExpense-page label,
+.select-boxAddExpense label {
+  margin-top: 30px;
+  align-self: self-start;
+  transform: translateY(-10px);
+  font-size: 16px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-weight: 600;
+}
+
+.input-boxAddExpense,
+.select-boxAddExpense {
+  width: 100%;
+  position: relative;
+}
+
+.input-boxAddExpense i,
+.select-boxAddExpense i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #666666;
+  font-size: 18px;
+}
+
+.input-boxAddExpense input,
+.select-boxAddExpense select {
+  padding-left: 60px;
+  box-sizing: border-box;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #666666ab;
+  border-radius: 10px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-weight: 500;
 }
