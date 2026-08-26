@@ -363,6 +363,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 /* .addExpense-page,
@@ -659,6 +660,11 @@ Login-csss-start here */
 /* addExpense-page */
 /* addExpense-page */
 
+input:focus,
+select:focus {
+  outline: none;
+}
+
 .footerMinGroup {
   margin-top: 25px;
   width: 100%;
@@ -688,9 +694,10 @@ Login-csss-start here */
 .select-boxAddExpense {
   width: 100%;
   position: relative;
+  color: #666666;
 }
 
-.input-boxAddExpense i,
+.input-boxAddExpense i:not(.fa-pen-to-square),
 .select-boxAddExpense i {
   position: absolute;
   left: 20px;
@@ -701,9 +708,35 @@ Login-csss-start here */
   font-size: 18px;
 }
 
+.input-boxAddExpense textarea {
+  padding-top: 15px;
+  padding-left: 60px;
+  box-sizing: border-box;
+  height: 120px;
+  width: 100%;
+  border: 1px solid #666666ab;
+  border-radius: 10px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-weight: 500;
+}
+
+.fa-pen-to-square {
+  position: absolute;
+  left: 20px;
+  top: 28px;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #666666;
+  font-size: 18px;
+}
+
 .input-boxAddExpense input,
 .select-boxAddExpense select {
+  position: relative;
   padding-left: 60px;
+  padding-right: 20px;
   box-sizing: border-box;
   height: 50px;
   width: 100%;
@@ -713,4 +746,62 @@ Login-csss-start here */
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
   font-weight: 500;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.select-boxAddExpense::after {
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  pointer-events: none;
+}
+
+#dateInput::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.btn-add-expense {
+  margin-top: 50px;
+  height: 50px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: rgba(25, 7, 162, 0.634);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffff;
+  transition: 0.1s;
+}
+
+.btn-add-expense:hover {
+  background-color: rgba(25, 7, 162, 0.517);
+}
+
+.btn-add-expense-cancel {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  height: 50px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #ffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  border: 0.5px solid #666666;
 }

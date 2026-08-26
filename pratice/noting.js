@@ -144,3 +144,16 @@ navContainer.forEach((navSingle, idx) => {
     }, 150);
   });
 });
+
+// Calender Icon Clicker & Add showPicker
+
+let calendarIcon = document.querySelector(".fa-calendar-days");
+let dateInput = document.querySelector("#dateInput");
+
+calendarIcon.addEventListener("click", () => {
+  dateInput.showPicker();
+});
+
+dateInput.addEventListener("click", () => {
+  dateInput.showPicker();
+});
