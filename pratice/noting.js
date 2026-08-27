@@ -157,3 +157,12 @@ calendarIcon.addEventListener("click", () => {
 dateInput.addEventListener("click", () => {
   dateInput.showPicker();
 });
+
+// Page loding Screen
+
+window.addEventListener("load", () => {
+  let looder = document.querySelector(".loader");
+  let pages = document.querySelectorAll(".footerMinGroup");
+
+  looder.style.display = "none";
+});
