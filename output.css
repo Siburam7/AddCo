@@ -321,9 +321,106 @@ nav {
 }
 
 .manu-allText {
-  margin-top: 20px;
   width: 100%;
   display: none;
+}
+
+.top-manu-pf {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: black;
+}
+
+.top-manu-pf-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(25, 7, 162, 0.124);
+
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 80%);
+}
+
+.pf-logo {
+  position: relative;
+
+  height: 100px;
+  aspect-ratio: 1/1;
+}
+
+.pf-image {
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #ffff;
+  border: 2px solid rgba(25, 7, 162, 0.532);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main-pf-img {
+  height: 92%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgba(25, 7, 162, 0.243);
+}
+
+.main-pf-img-icon {
+  font-size: 75px;
+}
+
+.change-img {
+  position: absolute;
+  height: 28px;
+  aspect-ratio: 1/1;
+  background-color: #666;
+  border: 2px solid #ffff;
+  border-radius: 50%;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.change-img i {
+  color: #ffff;
+  font-size: 14px;
+}
+
+#user-name {
+  font-weight: 650;
+  letter-spacing: 0.2px;
+  font-size: 20px;
+}
+
+#user-mail {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  color: #666;
+}
+
+.dtls-manu-pf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .manu-allText h1 {
@@ -820,12 +917,11 @@ textarea:invalid {
   border: 0.5px solid #666666;
 }
 
-/* profile page start here */
-/* profile page start here */
-/* profile page start here */
-/* profile page start here */
-/* profile page start here */
-/* profile page start here */
+/* loader page start here */
+/* loader page start here */
+/* loader page start here */
+/* loader page start here */
+/* loader page start here */
 
 .loader {
   position: fixed;
@@ -861,4 +957,13 @@ textarea:invalid {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* profile page start here */
+
+.profile-page {
+  display: none;
+  height: 100dvh;
+  width: 100%;
+  background-color: #1362fb;
 }

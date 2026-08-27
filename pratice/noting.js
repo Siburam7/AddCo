@@ -162,7 +162,22 @@ dateInput.addEventListener("click", () => {
 
 window.addEventListener("load", () => {
   let looder = document.querySelector(".loader");
-  let pages = document.querySelectorAll(".footerMinGroup");
 
   looder.style.display = "none";
+});
+
+// Profile page
+
+let pfIcon = document.querySelector(".img-user");
+let pfPage = document.querySelector(".profile-page");
+let body = document.querySelector("body");
+
+pfIcon.addEventListener("click", () => {
+  if (body.style.display === "flex") {
+    body.style.display = "none";
+    pfPage.style.display = "flex";
+  } else {
+    body.style.display = "flex";
+    pfPage.style.display = "none";
+  }
 });
