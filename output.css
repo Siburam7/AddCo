@@ -327,29 +327,25 @@ nav {
 
 .top-manu-pf {
   position: relative;
-  height: 200px;
-  width: 100%;
-  margin-bottom: 20px;
+  height: 90px;
+  width: 95%;
+  margin-block: 20px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   color: black;
-}
 
-.top-manu-pf-bg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(25, 7, 162, 0.124);
-
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 80%);
+  border: 0.5px solid rgba(25, 7, 162, 0.532);
+  border-radius: 8px;
+  background-color: rgba(25, 7, 162, 0.05);
 }
 
 .pf-logo {
+  margin: 10px;
   position: relative;
 
-  height: 100px;
+  height: 60px;
   aspect-ratio: 1/1;
 }
 
@@ -379,7 +375,13 @@ nav {
 }
 
 .main-pf-img-icon {
-  font-size: 75px;
+  font-size: 40px;
+}
+
+.right-side-arr {
+  margin-right: 15px;
+  position: absolute;
+  right: 0;
 }
 
 .change-img {
@@ -406,7 +408,7 @@ nav {
 #user-name {
   font-weight: 650;
   letter-spacing: 0.2px;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 #user-mail {
@@ -420,7 +422,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .manu-allText h1 {
