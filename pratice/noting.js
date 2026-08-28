@@ -8,29 +8,36 @@ let navBtnText = document.querySelector(".text-top-nav-buttom");
 let OrgTetxAll = document.querySelector(".manu-allText");
 let toggleTextAll = document.querySelector(".toggle-manu-allText");
 
+let footerMinGroup = document.querySelectorAll(".footerMinGroup");
+
 manuBtnX.style.display = "none";
 
 manuBtn.addEventListener("click", () => {
+  manuBtn.style.transform = "rotate(360deg)";
+
   manuBtnX.style.display = "flex";
+  manuBtnX.style.transform = "rotate(360deg)";
+  manuBtn.style.display = "none";
   buttomNav.style.height = "calc(100vh - 45px)";
   buttomNav.style.backgroundColor = "white";
   buttomNav.style.width = "75%";
   navBtnText.style.display = "none";
 
   OrgTetxAll.classList.toggle("toggle-manu-allText");
-  manuBtn.style.display = "none";
+  // manuBtn.style.display = "none";
   document.body.style.overflow = "hidden";
 });
 
 manuBtnX.addEventListener("click", () => {
   manuBtn.style.display = "flex";
+  manuBtnX.style.display = "none";
+
   buttomNav.style.height = "28px";
   buttomNav.style.backgroundColor = "rgba(25, 7, 162, 0.304)";
   buttomNav.style.width = "100%";
   navBtnText.style.display = "inline";
 
   OrgTetxAll.classList.toggle("toggle-manu-allText");
-  manuBtnX.style.display = "none";
   document.body.style.overflow = "auto";
 });
 
@@ -39,7 +46,6 @@ manuBtnX.addEventListener("click", () => {
 // Footer all Option
 
 let footerMin = document.querySelectorAll(".footer-min");
-let footerMinGroup = document.querySelectorAll(".footerMinGroup");
 
 let navContainer = document.querySelectorAll(".manu-allText h1");
 let navContainerToggle = document.querySelector(".toogleNavBottom");

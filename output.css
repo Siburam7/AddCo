@@ -258,6 +258,14 @@ nav {
   color: #ffff;
 }
 
+.fa-bars {
+  transition: all 0.2s;
+}
+
+.fa-x {
+  transition: all 0.2s;
+}
+
 .div-left h1 {
   font-size: 20px;
   font-weight: 700;
@@ -344,7 +352,7 @@ nav {
   margin: 10px;
   position: relative;
 
-  height: 60px;
+  height: 40px;
   aspect-ratio: 1/1;
 }
 
@@ -374,7 +382,7 @@ nav {
 }
 
 .main-pf-img-icon {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .right-side-arr {
@@ -385,7 +393,7 @@ nav {
 
 .change-img {
   position: absolute;
-  height: 28px;
+  height: 20px;
   aspect-ratio: 1/1;
   background-color: #666;
   border: 2px solid #ffff;
@@ -401,7 +409,7 @@ nav {
 
 .change-img i {
   color: #ffff;
-  font-size: 14px;
+  font-size: 9px;
 }
 
 #user-name {
