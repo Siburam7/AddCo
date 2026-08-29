@@ -258,19 +258,6 @@ nav {
   color: #ffff;
 }
 
-.fa-bars {
-  transition: all 0.2s;
-}
-
-.fa-x {
-  transition: all 0.2s;
-}
-
-.div-left h1 {
-  font-size: 20px;
-  font-weight: 700;
-}
-
 .fa-bars,
 .fa-x {
   margin-right: 0px;
@@ -887,8 +874,11 @@ textarea:invalid {
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-
   pointer-events: none;
+}
+
+.select-boxAddExpense i:not(:first-child) {
+  display: none;
 }
 
 #dateInput::-webkit-calendar-picker-indicator {

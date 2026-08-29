@@ -13,8 +13,6 @@ let footerMinGroup = document.querySelectorAll(".footerMinGroup");
 manuBtnX.style.display = "none";
 
 manuBtn.addEventListener("click", () => {
-  manuBtn.style.transform = "rotate(360deg)";
-
   manuBtnX.style.display = "flex";
   manuBtnX.style.transform = "rotate(360deg)";
   manuBtn.style.display = "none";
@@ -186,4 +184,16 @@ pfIcon.addEventListener("click", () => {
     body.style.display = "flex";
     pfPage.style.display = "none";
   }
+});
+
+// category all icon change
+
+const category = document.querySelector("#category");
+
+const iconCategoryOption = document.querySelectorAll(".icon-category-option");
+
+category.addEventListener("change", (e) => {
+  iconCategoryOption.forEach((icon, idx) => {
+    icon.style.display = idx === e.target.selectedIndex ? "flex" : "none";
+  });
 });
