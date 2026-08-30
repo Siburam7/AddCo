@@ -197,3 +197,67 @@ category.addEventListener("change", (e) => {
     icon.style.display = idx === e.target.selectedIndex ? "flex" : "none";
   });
 });
+
+// Payment Method all icon Change
+
+const paymentMethod = document.querySelector("#paymentMethod");
+
+const iconPaymentMethod = document.querySelectorAll(".icon-payment-method");
+
+paymentMethod.addEventListener("change", (e) => {
+  iconPaymentMethod.forEach((icon, idx) => {
+    icon.style.display = idx === e.target.selectedIndex ? "flex" : "none";
+  });
+});
+
+// Add Expence Btn animation
+
+const addExpbtn = document.querySelector(".btn-add-expense");
+const spineerContener = document.querySelector(".spnner-btn-addExp");
+
+const checkIcon = document.querySelector(".fa-check-addEx");
+
+addExpbtn.addEventListener("click", () => {
+  addExpbtn.style.width = "50px";
+  addExpbtn.style.padding = "0";
+  addExpbtn.style.border = "4px solid rgba(66, 133, 244, 0.25)";
+  addExpbtn.style.backgroundColor = "transparent";
+  document.querySelector("#span-addEx").style.display = "none";
+
+  setTimeout(() => {
+    addExpbtn.style.borderRadius = "50%";
+  }, 50);
+
+  setTimeout(() => {
+    spineerContener.classList.add("spinnerAdder");
+
+    document.querySelector(".spinnerAdder").style.border =
+      "4px solid rgba(66, 133, 244, 0.25)";
+    document.querySelector(".spinnerAdder").style.borderTop =
+      "4px solid rgba(25, 7, 162, 0.634)";
+  }, 190);
+
+  setTimeout(() => {
+    document.querySelector(".spinnerAdder").style.border =
+      "4px solid rgba(34, 197, 94, 0.20)";
+    document.querySelector(".spinnerAdder").style.borderTop =
+      "4px solid #22c55e";
+  }, 1300);
+
+  setTimeout(() => {
+    spineerContener.classList.remove("spinnerAdder");
+    addExpbtn.style.borderRadius = "10px";
+    addExpbtn.style.border = "none";
+    addExpbtn.style.backgroundColor = "#22c55e";
+
+    checkIcon.style.setProperty("display", "flex", "important");
+  }, 1450);
+
+  setTimeout(() => {
+    checkIcon.style.setProperty("display", "none", "important");
+    addExpbtn.style.backgroundColor = "rgba(25, 7, 162, 0.634)";
+    addExpbtn.style.width = "100%";
+    addExpbtn.style.padding = "12px";
+    document.querySelector("#span-addEx").style.display = "inline";
+  }, 2200);
+});
