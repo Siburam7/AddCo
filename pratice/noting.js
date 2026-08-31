@@ -1,3 +1,33 @@
+// reset addEx form
+
+const cancelBtnAddEx = document.querySelector(".btn-add-expense-cancel");
+
+const amountInputAddEx = document.querySelector("#enterAmount");
+const categoryAddEx = document.querySelector("#category");
+const dateInputAddEx = document.querySelector("#dateInput");
+const paymentMethodAddEx = document.querySelector("#paymentMethod");
+const descriptionAddEx = document.querySelector("#description");
+
+function resetAddExForm() {
+  amountInputAddEx.value = "";
+  categoryAddEx.value = "";
+  dateInputAddEx.value = "";
+  paymentMethodAddEx.value = "";
+  descriptionAddEx.value = "";
+
+  iconCategoryOption.forEach((iconCateOpt, idx) => {
+    iconCateOpt.style.display = idx === 0 ? "flex" : "none";
+  });
+
+  iconPaymentMethod.forEach((iconPreChange, idx) => {
+    iconPreChange.style.display = idx === 0 ? "flex" : "none";
+  });
+}
+
+cancelBtnAddEx.addEventListener("click", () => {
+  resetAddExForm();
+});
+
 // nav-menu
 
 let buttomNav = document.querySelector(".nav-button");
@@ -14,7 +44,7 @@ manuBtnX.style.display = "none";
 
 manuBtn.addEventListener("click", () => {
   manuBtnX.style.display = "flex";
-  manuBtnX.style.transform = "rotate(360deg)";
+  // manuBtnX.style.transform = "rotate(360deg)";
   manuBtn.style.display = "none";
   buttomNav.style.height = "calc(100vh - 45px)";
   buttomNav.style.backgroundColor = "white";
@@ -170,22 +200,6 @@ window.addEventListener("load", () => {
   looder.style.display = "none";
 });
 
-// Profile page
-
-let pfIcon = document.querySelector(".img-user");
-let pfPage = document.querySelector(".profile-page");
-let body = document.querySelector("body");
-
-pfIcon.addEventListener("click", () => {
-  if (body.style.display === "flex") {
-    body.style.display = "none";
-    pfPage.style.display = "flex";
-  } else {
-    body.style.display = "flex";
-    pfPage.style.display = "none";
-  }
-});
-
 // category all icon change
 
 const category = document.querySelector("#category");
@@ -214,15 +228,22 @@ paymentMethod.addEventListener("change", (e) => {
 
 const addExpbtn = document.querySelector(".btn-add-expense");
 const spineerContener = document.querySelector(".spnner-btn-addExp");
-
 const checkIcon = document.querySelector(".fa-check-addEx");
+const addExpText = document.querySelector("#span-addEx");
+
+let isAnimating = false;
 
 addExpbtn.addEventListener("click", () => {
+  if (isAnimating) return;
+
+  isAnimating = true;
+
   addExpbtn.style.width = "50px";
   addExpbtn.style.padding = "0";
   addExpbtn.style.border = "4px solid rgba(66, 133, 244, 0.25)";
   addExpbtn.style.backgroundColor = "transparent";
-  document.querySelector("#span-addEx").style.display = "none";
+
+  addExpText.style.display = "none";
 
   setTimeout(() => {
     addExpbtn.style.borderRadius = "50%";
@@ -231,21 +252,24 @@ addExpbtn.addEventListener("click", () => {
   setTimeout(() => {
     spineerContener.classList.add("spinnerAdder");
 
-    document.querySelector(".spinnerAdder").style.border =
-      "4px solid rgba(66, 133, 244, 0.25)";
-    document.querySelector(".spinnerAdder").style.borderTop =
-      "4px solid rgba(25, 7, 162, 0.634)";
+    const spinnerAdder = document.querySelector(".spinnerAdder");
+
+    spinnerAdder.style.border = "4px solid rgba(66, 133, 244, 0.25)";
+
+    spinnerAdder.style.borderTop = "4px solid rgba(25, 7, 162, 0.634)";
   }, 190);
 
   setTimeout(() => {
-    document.querySelector(".spinnerAdder").style.border =
-      "4px solid rgba(34, 197, 94, 0.20)";
-    document.querySelector(".spinnerAdder").style.borderTop =
-      "4px solid #22c55e";
+    const spinnerAdder = document.querySelector(".spinnerAdder");
+
+    spinnerAdder.style.border = "4px solid rgba(34, 197, 94, 0.20)";
+
+    spinnerAdder.style.borderTop = "4px solid #22c55e";
   }, 1300);
 
   setTimeout(() => {
     spineerContener.classList.remove("spinnerAdder");
+
     addExpbtn.style.borderRadius = "10px";
     addExpbtn.style.border = "none";
     addExpbtn.style.backgroundColor = "#22c55e";
@@ -255,9 +279,36 @@ addExpbtn.addEventListener("click", () => {
 
   setTimeout(() => {
     checkIcon.style.setProperty("display", "none", "important");
+
     addExpbtn.style.backgroundColor = "rgba(25, 7, 162, 0.634)";
     addExpbtn.style.width = "100%";
     addExpbtn.style.padding = "12px";
-    document.querySelector("#span-addEx").style.display = "inline";
+
+    addExpText.style.display = "inline";
+    resetAddExForm();
   }, 2200);
+
+  setTimeout(() => {
+    isAnimating = false;
+  }, 2500);
+});
+
+// nav profile menu page Design
+
+const menuProfile = document.querySelector(".top-manu-pf");
+const menuAllText = document.querySelector(".manu-allText");
+
+menuProfile.addEventListener("click", () => {
+  buttomNav.style.width = "100%";
+
+  const menuItems = menuAllText.children;
+  document.querySelector(".right-side-arr").style.display = "none";
+  document.querySelector(".dtls-manu-pf").style.display = "none";
+  menuProfile.classList.toggle("top-menu-pf-adder");
+
+  for (let i = 0; i < menuItems.length; i++) {
+    if (menuItems[i] !== menuProfile) {
+      menuItems[i].style.display = "none";
+    }
+  }
 });
