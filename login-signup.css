@@ -1,0 +1,209 @@
+/* login css */
+
+.login-body-main {
+  background-image: url("img-png/login-bg-img.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-boxx-login {
+  width: 92%;
+  border-radius: 15px;
+  border: 0.1px solid #666666ab;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  background: rgba(255, 255, 255, 0.495);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 15px;
+
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img-logo-top {
+  background-image: url("img-png/Finaal\ AddCo\ logo.png");
+  background-position: center;
+  background-size: cover;
+  width: 75px;
+  aspect-ratio: 1/0.3;
+  align-self: flex-start;
+}
+
+#welcome-back {
+  padding-top: 30px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 630;
+}
+
+.bio-P-graph {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.611);
+  margin-top: -2px;
+}
+
+.label-grp {
+  width: 95%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.password-box {
+  position: relative;
+  width: 100%;
+}
+
+.password-box input:focus {
+  border-color: #4285f4;
+}
+
+.password-box i {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+  font-size: 16px;
+}
+
+.label-grp input {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #666666ab;
+  padding: 12px;
+  border-radius: 10px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-weight: 500;
+}
+
+.label-grp input:focus {
+  border: 1px solid #1362fb;
+}
+
+.label-grp input:invalid {
+  border: 1px solid red;
+}
+
+.label-grp label {
+  align-self: self-start;
+  transform: translateY(13px);
+  font-size: 15px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-weight: 600;
+}
+
+.remember-forget-contner {
+  font-size: 15px;
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  /* background-color: rebeccapurple; */
+}
+
+.remember-forget-contner a {
+  color: #1362fb;
+}
+
+.remember-forget-contner label {
+  color: rgba(0, 0, 0, 0.611);
+}
+
+.btn-login {
+  margin-top: 20px;
+  height: 50px;
+  width: 95%;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #1362fb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffff;
+}
+
+.btn-login:hover {
+  background-color: #0055ffb3;
+}
+
+.remember-forget-contner a:hover,
+#signUp-line :last-child:hover {
+  color: #0055ffb3;
+}
+
+#signUp-line {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+#signUp-line :last-child {
+  margin-left: 5px;
+  color: #1362fb;
+}
+
+.login-footer {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #666666ab;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+/* signUp css */
+
+.label-grp-login {
+  margin-top: 40px;
+}
+
+.btn-sign-up {
+  margin-top: 20px;
+  height: 50px;
+  width: 95%;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #1362fb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffff;
+}
+
+.btn-sign-up:hover {
+  background-color: #0055ffb3;
+}

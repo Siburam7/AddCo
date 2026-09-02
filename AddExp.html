@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddExp-AddCo</title>
+    <link rel="stylesheet" href="./output.css">
+    <!-- <link rel="stylesheet" href="addExpense.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="addExpense-page footerMinGroup">
+
+        <label>Amount</label>
+
+        <div class="input-boxAddExpense">
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+            <input id="enterAmount" type="number" placeholder="Enter amount">
+        </div>
+
+
+
+        <label>Category</label>
+
+        <div class="select-boxAddExpense">
+
+            <i class="icon-category-option fa-solid fa-layer-group"></i>
+            <i class="icon-category-option fa-solid fa-laptop"></i>
+            <i class="icon-category-option fa-solid fa-shirt"></i>
+            <i class="icon-category-option fa-solid fa-bowl-food"></i>
+            <i class="icon-category-option fa-solid fa-basket-shopping"></i>
+            <i class="icon-category-option fa-solid fa-ellipsis-vertical"></i>
+            <select id="category" name="category">
+                <option class="category-option" value="">Select Category</option>
+                <option class="category-option" value="electronics">Electronics</option>
+                <option class="category-option" value="clothing">Clothing</option>
+                <option class="category-option" value="food">Food</option>
+                <option class="category-option" value="grocery">Grocery</option>
+                <option class="category-option" value="other">Other</option>
+            </select>
+        </div>
+
+
+
+        <label>Date</label>
+
+        <div class="input-boxAddExpense">
+            <i class="fa-regular fa-calendar-days"></i>
+            <input type="date" id="dateInput">
+        </div>
+
+
+
+        <label>Payment Method</label>
+
+        <div class="select-boxAddExpense">
+            <i class="icon-payment-method fa-solid fa-money-check-dollar"></i>
+            <i class="icon-payment-method fa-solid fa-qrcode"></i>
+            <i class="icon-payment-method fa-solid fa-wallet"></i>
+            <i class="icon-payment-method fa-regular fa-credit-card"></i>
+            <i class="icon-payment-method fa-solid fa-credit-card"></i>
+            <i class="icon-payment-method fa-solid fa-building-columns"></i>
+            <select id="paymentMethod" name="paymentMethod">
+                <option value="">Select Payment Method</option>
+                <option value="upi">UPI</option>
+                <option value="cash">Cash</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select>
+        </div>
+
+
+
+
+        <label>Description(Optional)</label>
+
+        <div class="input-boxAddExpense">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <textarea id="description" placeholder="Enter description"></textarea>
+        </div>
+
+        <div class="btn-add-expense">
+            <i class="fa-solid fa-check fa-check-addEx"></i>
+            <span id="span-addEx">Add Expense</span>
+            <div class="spnner-btn-addExp"></div>
+        </div>
+
+        <div class="btn-add-expense-cancel">Cancel</div>
+
+    </div>
+</body>
+
+</html>

@@ -292,23 +292,3 @@ addExpbtn.addEventListener("click", () => {
     isAnimating = false;
   }, 2500);
 });
-
-// nav profile menu page Design
-
-const menuProfile = document.querySelector(".top-manu-pf");
-const menuAllText = document.querySelector(".manu-allText");
-
-menuProfile.addEventListener("click", () => {
-  buttomNav.style.width = "100%";
-
-  const menuItems = menuAllText.children;
-  document.querySelector(".right-side-arr").style.display = "none";
-  document.querySelector(".dtls-manu-pf").style.display = "none";
-  menuProfile.classList.toggle("top-menu-pf-adder");
-
-  for (let i = 0; i < menuItems.length; i++) {
-    if (menuItems[i] !== menuProfile) {
-      menuItems[i].style.display = "none";
-    }
-  }
-});
