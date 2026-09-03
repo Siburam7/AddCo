@@ -82,11 +82,21 @@ nav {
   display: none;
 }
 
+.top-manu-pf-contener {
+  /* height: 400px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* background-color: rebeccapurple; */
+}
+
 .top-manu-pf {
   position: relative;
   width: 95%;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   display: flex;
   /* flex-direction: column; */
   align-items: center;
@@ -131,6 +141,61 @@ nav {
   background-color: rgba(25, 7, 162, 0.243);
 }
 
+.acc-type {
+  height: 50px;
+  width: 95%;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #4285f4; */
+  padding-inline: 10px;
+  padding-block: 30px;
+  /* border-bottom: 0.1px solid #666; */
+}
+
+.acc-type-top {
+  margin-bottom: 10px;
+  border-bottom: 0.5px solid #666;
+}
+
+.left-side {
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-side-logo-menu-pf {
+  margin-right: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.menu-pf-right-side-greterthan {
+  margin-right: 15px;
+}
+
+.circle-cont {
+  height: 22px;
+  aspect-ratio: 1/1;
+  background-color: rgba(25, 7, 162, 0.634);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.circle-cont i {
+  font-size: 12px;
+  color: #ffff;
+}
+
+.right-side {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .main-pf-img-icon {
   font-size: 30px;
 }
@@ -139,6 +204,7 @@ nav {
   margin-right: 20px;
   position: absolute;
   right: 0;
+  /* transition: 0.1s ease; */
 }
 
 .change-img {

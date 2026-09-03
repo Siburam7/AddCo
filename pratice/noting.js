@@ -1,5 +1,7 @@
 // reset addEx form
 
+// const { act } = require("react");
+
 const cancelBtnAddEx = document.querySelector(".btn-add-expense-cancel");
 
 const amountInputAddEx = document.querySelector("#enterAmount");
@@ -48,7 +50,7 @@ manuBtn.addEventListener("click", () => {
   manuBtn.style.display = "none";
   buttomNav.style.height = "calc(100vh - 45px)";
   buttomNav.style.backgroundColor = "white";
-  buttomNav.style.width = "75%";
+  buttomNav.style.width = "80%";
   navBtnText.style.display = "none";
 
   OrgTetxAll.classList.toggle("toggle-manu-allText");
@@ -67,6 +69,22 @@ manuBtnX.addEventListener("click", () => {
 
   OrgTetxAll.classList.toggle("toggle-manu-allText");
   document.body.style.overflow = "auto";
+
+  // close menu profile page if open
+
+  if (menuPfContener.style.height === "400px") {
+    rightSideArr.style.transform = "rotate(0deg)";
+    menuPfContener.style.height = "auto";
+    accTypeCommon.forEach((acTc) => {
+      acTc.style.display = "none";
+    });
+
+    menuTextAllh1.forEach((mTAll) => {
+      mTAll.style.opacity = "1";
+    });
+
+    topPfMain.style.marginBottom = "30px";
+  }
 });
 
 // navMenuToggle();
@@ -291,4 +309,40 @@ addExpbtn.addEventListener("click", () => {
   setTimeout(() => {
     isAnimating = false;
   }, 2500);
+});
+
+// profile after click
+
+const rightSideArr = document.querySelector(".right-side-arr");
+const menuPfContener = document.querySelector(".top-manu-pf-contener");
+const accTypeCommon = document.querySelectorAll(".acc-type");
+let menuTextAllh1 = document.querySelectorAll(".manu-allText h1");
+let topPfMain = document.querySelector(".top-manu-pf");
+
+rightSideArr.addEventListener("click", () => {
+  if (menuPfContener.style.height === "400px") {
+    rightSideArr.style.transform = "rotate(0deg)";
+    menuPfContener.style.height = "auto";
+    accTypeCommon.forEach((acTc) => {
+      acTc.style.display = "none";
+    });
+
+    menuTextAllh1.forEach((mTAll) => {
+      mTAll.style.opacity = "1";
+    });
+
+    topPfMain.style.marginBottom = "30px";
+  } else {
+    menuPfContener.style.height = "400px";
+    rightSideArr.style.transform = "rotate(90deg)";
+    accTypeCommon.forEach((acTc) => {
+      acTc.style.display = "flex";
+    });
+
+    menuTextAllh1.forEach((mTAll) => {
+      mTAll.style.opacity = "0";
+    });
+
+    topPfMain.style.marginBottom = "0px";
+  }
 });
