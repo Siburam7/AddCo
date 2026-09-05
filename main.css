@@ -96,7 +96,7 @@ nav {
   position: relative;
   width: 95%;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   display: flex;
   /* flex-direction: column; */
   align-items: center;
@@ -112,7 +112,7 @@ nav {
   margin: 15px;
   position: relative;
 
-  height: 85px;
+  height: 70px;
   aspect-ratio: 1/1;
 }
 
@@ -197,7 +197,7 @@ nav {
 }
 
 .main-pf-img-icon {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .right-side-arr {
@@ -209,7 +209,7 @@ nav {
 
 .change-img {
   position: absolute;
-  height: 32px;
+  height: 28px;
   aspect-ratio: 1/1;
   background-color: rgb(18, 7, 108);
   border: 2px solid #ffff;
@@ -225,13 +225,13 @@ nav {
 
 .change-img i {
   color: #ffff;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #user-name {
-  font-weight: 700;
+  font-weight: 640;
   letter-spacing: 0.3px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 #user-mail {
@@ -277,6 +277,7 @@ nav {
   padding: 15px;
   position: relative;
   color: #666;
+  font-size: 17px;
 }
 
 .toogleNavBottom {

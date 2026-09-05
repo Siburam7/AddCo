@@ -50,7 +50,7 @@ manuBtn.addEventListener("click", () => {
   manuBtn.style.display = "none";
   buttomNav.style.height = "calc(100vh - 45px)";
   buttomNav.style.backgroundColor = "white";
-  buttomNav.style.width = "80%";
+  buttomNav.style.width = "90%";
   navBtnText.style.display = "none";
 
   OrgTetxAll.classList.toggle("toggle-manu-allText");
