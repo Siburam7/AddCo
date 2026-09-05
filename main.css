@@ -154,6 +154,14 @@ nav {
   );
 }
 
+.afterClickArrLong {
+  position: absolute;
+  font-weight: 300;
+  margin-left: 10px;
+  font-size: 22px;
+  left: 0;
+}
+
 .top-manu-pf-bottom {
   width: 100%;
 
@@ -162,12 +170,20 @@ nav {
   justify-content: flex-start;
 }
 
+.top-manu-pf-bottom-after {
+  flex-direction: column;
+}
+
 .pf-logo {
   margin: 15px;
   position: relative;
 
   height: 60px;
   aspect-ratio: 1/1;
+}
+
+.pf-logo-after {
+  height: 100px;
 }
 
 .pf-image {
@@ -255,6 +271,10 @@ nav {
   font-size: 40px;
 }
 
+.main-pf-img-icon-after {
+  font-size: 75px;
+}
+
 .right-side-arr {
   margin-right: 20px;
   position: absolute;
@@ -278,9 +298,17 @@ nav {
   justify-content: center;
 }
 
-.change-img i {
+.change-img-after {
+  height: 33px;
+}
+
+.camera-change-img {
   color: #ffff;
   font-size: 10px;
+}
+
+.change-img-i-after {
+  font-size: 15px;
 }
 
 #user-name {

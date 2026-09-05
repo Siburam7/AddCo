@@ -318,39 +318,68 @@ const menuPfContener = document.querySelector(".top-manu-pf-contener");
 const accTypeCommon = document.querySelectorAll(".acc-type");
 let menuTextAllh1 = document.querySelectorAll(".manu-allText h1");
 let topPfMain = document.querySelector(".top-manu-pf");
+let topMenuPfButton = document.querySelector(".top-manu-pf-bottom");
+let leftSideArrowAfter = document.querySelector(".afterClickArrLong");
+
+let pfLogoMain = document.querySelector(".pf-logo");
+let mainPfIcon = document.querySelector(".main-pf-img-icon");
+let changeImage = document.querySelector(".change-img");
+let changeImageITag = document.querySelector(".camera-change-img");
+
+leftSideArrowAfter.style.display = "none";
+
+leftSideArrowAfter.addEventListener("click", () => {
+  buttomNav.style.width = "90%";
+  rightSideArr.style.display = "flex";
+  leftSideArrowAfter.style.display = "none";
+  menuPfContener.style.height = "auto";
+  menuPfContener.style.backgroundColor = "#ffff";
+  accTypeCommon.forEach((acTc) => {
+    acTc.style.display = "none";
+  });
+
+  menuTextAllh1.forEach((mTAll) => {
+    mTAll.style.opacity = "1";
+  });
+
+  topPfMain.style.backgroundColor = "rgba(25, 7, 162, 0.05)";
+  topPfMain.style.border = "0.5px solid rgba(25, 7, 162, 0.532)";
+
+  topPfMain.style.marginBottom = "0px";
+  topPfMain.style.marginBlock = "20px";
+  topMenuPfButton.classList.remove("top-manu-pf-bottom-after");
+
+  // pf circle normal
+  pfLogoMain.classList.remove("pf-logo-after");
+  mainPfIcon.classList.remove("main-pf-img-icon-after");
+  changeImage.classList.remove("change-img-after");
+  changeImageITag.classList.remove("change-img-i-after");
+});
 
 rightSideArr.addEventListener("click", () => {
-  if (menuPfContener.style.height < "400px") {
-    buttomNav.style.width = "90%";
-    rightSideArr.style.transform = "rotate(0deg)";
-    menuPfContener.style.height = "auto";
-    menuPfContener.style.backgroundColor = "#ffff";
-    accTypeCommon.forEach((acTc) => {
-      acTc.style.display = "none";
-    });
+  buttomNav.style.width = "100%";
+  menuPfContener.style.height = "100dvh";
+  menuPfContener.style.backgroundColor = "rgba(25, 7, 162, 0.05)";
+  rightSideArr.style.display = "none";
+  leftSideArrowAfter.style.display = "flex";
+  accTypeCommon.forEach((acTc) => {
+    acTc.style.display = "flex";
+  });
 
-    menuTextAllh1.forEach((mTAll) => {
-      mTAll.style.opacity = "1";
-    });
+  menuTextAllh1.forEach((mTAll) => {
+    mTAll.style.opacity = "0";
+  });
 
-    // topPfMain.style.marginBottom = "0px";
-    topPfMain.style.backgroundColor = "rgba(25, 7, 162, 0.05)";
-    topPfMain.style.border = "0.5px solid rgba(25, 7, 162, 0.532)";
-  } else {
-    buttomNav.style.width = "100%";
-    menuPfContener.style.height = "100dvh";
-    menuPfContener.style.backgroundColor = "rgba(25, 7, 162, 0.05)";
-    rightSideArr.style.transform = "rotate(90deg)";
-    accTypeCommon.forEach((acTc) => {
-      acTc.style.display = "flex";
-    });
+  topPfMain.style.backgroundColor = "transparent";
+  topPfMain.style.border = "none";
 
-    menuTextAllh1.forEach((mTAll) => {
-      mTAll.style.opacity = "0";
-    });
+  topPfMain.style.marginBlock = "0px";
+  topPfMain.style.marginBottom = "20px";
+  topMenuPfButton.classList.add("top-manu-pf-bottom-after");
 
-    // topPfMain.style.marginBottom = "0px";
-    topPfMain.style.backgroundColor = "transparent";
-    topPfMain.style.border = "none";
-  }
+  // pf circle after
+  pfLogoMain.classList.add("pf-logo-after");
+  mainPfIcon.classList.add("main-pf-img-icon-after");
+  changeImage.classList.add("change-img-after");
+  changeImageITag.classList.add("change-img-i-after");
 });
