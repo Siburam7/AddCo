@@ -320,9 +320,11 @@ let menuTextAllh1 = document.querySelectorAll(".manu-allText h1");
 let topPfMain = document.querySelector(".top-manu-pf");
 
 rightSideArr.addEventListener("click", () => {
-  if (menuPfContener.style.height === "400px") {
+  if (menuPfContener.style.height < "400px") {
+    buttomNav.style.width = "90%";
     rightSideArr.style.transform = "rotate(0deg)";
     menuPfContener.style.height = "auto";
+    menuPfContener.style.backgroundColor = "#ffff";
     accTypeCommon.forEach((acTc) => {
       acTc.style.display = "none";
     });
@@ -331,9 +333,13 @@ rightSideArr.addEventListener("click", () => {
       mTAll.style.opacity = "1";
     });
 
-    topPfMain.style.marginBottom = "30px";
+    // topPfMain.style.marginBottom = "0px";
+    topPfMain.style.backgroundColor = "rgba(25, 7, 162, 0.05)";
+    topPfMain.style.border = "0.5px solid rgba(25, 7, 162, 0.532)";
   } else {
-    menuPfContener.style.height = "400px";
+    buttomNav.style.width = "100%";
+    menuPfContener.style.height = "100dvh";
+    menuPfContener.style.backgroundColor = "rgba(25, 7, 162, 0.05)";
     rightSideArr.style.transform = "rotate(90deg)";
     accTypeCommon.forEach((acTc) => {
       acTc.style.display = "flex";
@@ -343,6 +349,8 @@ rightSideArr.addEventListener("click", () => {
       mTAll.style.opacity = "0";
     });
 
-    topPfMain.style.marginBottom = "0px";
+    // topPfMain.style.marginBottom = "0px";
+    topPfMain.style.backgroundColor = "transparent";
+    topPfMain.style.border = "none";
   }
 });

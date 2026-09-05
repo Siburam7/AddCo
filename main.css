@@ -1,3 +1,23 @@
+/* body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+button {
+  font-size: 16px;
+} */
+
 nav {
   width: 100%;
 }
@@ -95,12 +115,11 @@ nav {
 .top-manu-pf {
   position: relative;
   width: 95%;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-block: 20px;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   color: black;
 
   border: 0.5px solid rgba(25, 7, 162, 0.532);
@@ -108,11 +127,46 @@ nav {
   background-color: rgba(25, 7, 162, 0.05);
 }
 
+.top-manu-pf-top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-block: 5px;
+  font-size: 17px;
+  color: #666;
+}
+
+.top-manu-pf-top::after {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 0.8px;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(25, 7, 162, 0.532),
+    rgba(25, 7, 162, 0.532),
+    transparent
+  );
+}
+
+.top-manu-pf-bottom {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .pf-logo {
   margin: 15px;
   position: relative;
 
-  height: 70px;
+  height: 60px;
   aspect-ratio: 1/1;
 }
 
@@ -143,7 +197,7 @@ nav {
 
 .acc-type {
   height: 50px;
-  width: 95%;
+  width: 90%;
   display: none;
   align-items: center;
   justify-content: space-between;
@@ -166,9 +220,9 @@ nav {
 }
 
 .left-side-logo-menu-pf {
-  margin-right: 20px;
+  margin-right: 10px;
   font-size: 18px;
-  color: #666;
+  color: rgba(25, 7, 162, 0.704);
 }
 
 .menu-pf-right-side-greterthan {
@@ -194,10 +248,11 @@ nav {
 .right-side {
   font-size: 18px;
   font-weight: 500;
+  color: #666;
 }
 
 .main-pf-img-icon {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .right-side-arr {
@@ -209,7 +264,7 @@ nav {
 
 .change-img {
   position: absolute;
-  height: 28px;
+  height: 25px;
   aspect-ratio: 1/1;
   background-color: rgb(18, 7, 108);
   border: 2px solid #ffff;
@@ -225,7 +280,7 @@ nav {
 
 .change-img i {
   color: #ffff;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 #user-name {
@@ -254,6 +309,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-block: 15px;
 }
 
 .premium-cir {
